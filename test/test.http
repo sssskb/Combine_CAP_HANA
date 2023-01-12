@@ -1,0 +1,19 @@
+@url = http://localhost:4004
+
+###
+GET {{url}}/catalog/Interactions_Header
+
+###
+GET {{url}}/catalog/Interactions_Items
+
+###
+//create customer
+POST {{url}}/catalog/Interactions_Items
+Content-Type: application/json
+
+{
+    "INTHeader_ID": 2,
+    "TEXT_ID": "3",
+    "LANGU": "EN",
+    "LOGTEXT": "The customer will make"
+}
